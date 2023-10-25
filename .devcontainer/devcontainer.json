@@ -2,13 +2,17 @@
 	"image": "mcr.microsoft.com/devcontainers/python:0-3.11-buster",
 	"waitFor": "onCreateCommand",
 	"updateContentCommand": "pip install -p Pipfile",
-	"postCreateCommand": "pipenv shell",
 	"customizations": {
-	  "vscode": {
-		"extensions": [
-		  "ms-python.python"
-		]
-	  }
+		"codespaces": {
+			"openFiles": [
+			  "README.md"
+			]
+		  },
+		"vscode": {
+			"extensions": [
+			"ms-python.python"
+			]
+		}
 	}
   }
   
